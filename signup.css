@@ -1,0 +1,671 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./assets/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header{
+    height: 10vh;
+    width: 100%;
+    background: transparent;
+}
+.logo{
+    position: relative;
+    height: 100%;
+    width: 15%;
+}
+img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.body{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    
+}
+.empty{
+    height: 100%;
+    width: 40%;
+}
+.form{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    height: 90%;
+    width: 45%;
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.82);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signpad{
+    height: 95%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr .7fr ;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-areas:
+        "head link"
+        "form form"
+    ;
+}
+.head{
+    grid-area: head;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    
+    align-items: center;
+}
+.headpa{
+    font-family: 'Poppins', sans-serif;
+}
+.headpad{
+    height: 70%;
+    width: 90%;
+    
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+.link{
+    grid-area: link;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputfields{
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.goog{
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+.user{
+    height: 20%;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact{
+    height: 20%;
+    display: flex;
+    gap: 10px;
+}
+.name{
+    height: 100%;
+    width: 50%;
+    
+}
+.contactnu{
+    height: 100%;
+    width: 50%;
+    
+}
+.pass{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+a{
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: rgb(167, 156, 156);
+}
+a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.submit{
+    display: flex;
+    justify-content: end;
+
+}
+.subbut{
+    padding: 10px 80px 10px 80px;
+    border-radius: 5px;
+    background-color: rgb(47, 118, 47);
+    color: white;
+    outline: none;
+    border: none;
+}
+.forgot{
+    display: flex;
+    justify-content: end;
+}
+.anchor{
+    color: blue;
+    cursor: pointer;
+}
+.anchor:hover{
+    text-decoration: underline;
+}
+.googpad{
+    position: relative;
+    height: 40%;
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 0.2fr;
+    gap: 8px;
+}
+.google{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(240, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: rgb(49, 49, 255);
+    
+}
+.face{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.app{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.googico{
+    height: 20px;
+    width: 20px;
+}
+.userin{
+    height: 40px;
+    width: 100%;
+    padding: 10px 0 10px 20px;
+    border-radius: 5px;
+    border: 1px white solid;
+    outline: none;
+}
+@media (min-width:200px) and (max-width:499px){
+    .container{
+        height: 100vh;
+        width: 100%;
+        background-image: url(./assets/back.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .header{
+        height: 10vh;
+        width: 100%;
+        background: transparent;
+    }
+    .logo{
+        position: relative;
+        height: 100%;
+        width: 60%;
+    }
+    img{
+        position: relative;
+        height: 100%;
+        width: 100%;
+       
+    }
+    .body{
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .empty{
+        display: none;
+    }
+    .form{
+        height: 80%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    form{
+        height: 70%;
+        width: 100%;
+        backdrop-filter: blur(0px) saturate(180%);
+        -webkit-backdrop-filter: blur(0px) saturate(180%);
+        background-color: rgba(255, 255, 255, 0.82);
+        border-radius: 12px;
+        border: 1px solid rgba(209, 213, 219, 0.3);
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .signpad{
+        height: 95%;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr .5fr ;
+        grid-template-rows: 0.1fr 1fr;
+        grid-template-areas:
+            "head link"
+            "form form"
+        ;
+    }
+    .head{
+        grid-area: head;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    label{
+        font-size: .8rem;
+    }
+    .headpa{
+        font-size: .7rem;
+        font-family: 'Poppins', sans-serif;
+    }
+    .headpad{
+        height: 70%;
+        width: 90%;
+        
+    }
+    h1{
+        font-family: 'Poppins', sans-serif;
+    }
+    .link{
+        grid-area: link;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .linkpad{
+        height: 50%;
+        width: 100%;
+    }
+    
+    .inputfields{
+        grid-area: form;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .goog{
+        height: 20%;
+        display: flex;
+        align-items: center;
+    }
+    .user{
+        height: 20%;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contact{
+        height: 20%;
+        display: flex;
+        gap: 10px;
+    }
+    .name{
+        height: 100%;
+        width: 50%;
+        
+    }
+    .contactnu{
+        height: 100%;
+        width: 50%;
+        
+    }
+    .pass{
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    a{
+        font-size: 0.7rem;
+        text-decoration: none;
+        color: rgb(167, 156, 156);
+    }
+    a:hover{
+        color: blue;
+        text-decoration: underline;
+    }
+    .submit{
+        display: flex;
+        justify-content: end;
+    
+    }
+    .subbut{
+        padding: 10px 80px 10px 80px;
+        border-radius: 5px;
+        background-color: #88a765;
+        color: white;
+        outline: none;
+        border: none;
+    }
+    .forgot{
+        display: flex;
+        justify-content: end;
+    }
+    .anchor{
+        color: blue;
+        cursor: pointer;
+    }
+    .anchor:hover{
+        text-decoration: underline;
+    }
+    .googpad{
+        position: relative;
+        height: 40%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 0.3fr 0.3fr;
+        gap: 8px;
+    }
+    .google{
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: rgb(240, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        color: rgb(49, 49, 255);
+        font-size: 12px;
+        
+    }
+    .face{
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .app{
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .googico{
+        height: 20px;
+        width: 20px;
+    }
+    .userin{
+        height: 50px;
+        width: 100%;
+        padding: 10px 0 10px 20px;
+        border-radius: 5px;
+        border: 1px white solid;
+        outline: none;
+    }
+}
+@media (min-width:500px) and (max-width:1000px){
+    .container{
+        height: 100vh;
+        width: 100%;
+        background-image: url(./assets/back.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .header{
+        height: 10vh;
+        width: 100%;
+        background: transparent;
+    }
+    .logo{
+        position: relative;
+        height: 100%;
+        width: 60%;
+    }
+    img{
+        position: relative;
+        height: 100%;
+        width: 100%;
+       
+    }
+    .body{
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .empty{
+        display: none;
+    }
+    .form{
+        height: 80%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    form{
+        height: 70%;
+        width: 100%;
+        backdrop-filter: blur(0px) saturate(180%);
+        -webkit-backdrop-filter: blur(0px) saturate(180%);
+        background-color: rgba(255, 255, 255, 0.82);
+        border-radius: 12px;
+        border: 1px solid rgba(209, 213, 219, 0.3);
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .signpad{
+        height: 95%;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr .5fr ;
+        grid-template-rows: 0.1fr 1fr;
+        grid-template-areas:
+            "head link"
+            "form form"
+        ;
+    }
+    .head{
+        grid-area: head;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    label{
+        font-size: .8rem;
+    }
+    .headpa{
+        font-size: .7rem;
+        font-family: 'Poppins', sans-serif;
+    }
+    .headpad{
+        height: 70%;
+        width: 90%;
+        
+    }
+    h1{
+        font-family: 'Poppins', sans-serif;
+    }
+    .link{
+        grid-area: link;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .linkpad{
+        height: 50%;
+        width: 100%;
+    }
+    
+    .inputfields{
+        grid-area: form;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .goog{
+        height: 20%;
+        display: flex;
+        align-items: center;
+    }
+    .user{
+        height: 20%;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contact{
+        height: 20%;
+        display: flex;
+        gap: 10px;
+    }
+    .name{
+        height: 100%;
+        width: 50%;
+        
+    }
+    .contactnu{
+        height: 100%;
+        width: 50%;
+        
+    }
+    .pass{
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    a{
+        font-size: 0.7rem;
+        text-decoration: none;
+        color: rgb(167, 156, 156);
+    }
+    a:hover{
+        color: blue;
+        text-decoration: underline;
+    }
+    .submit{
+        display: flex;
+        justify-content: end;
+    
+    }
+    .subbut{
+        padding: 10px 80px 10px 80px;
+        border-radius: 5px;
+        background-color: #88a765;
+        color: white;
+        outline: none;
+        border: none;
+    }
+    .forgot{
+        display: flex;
+        justify-content: end;
+    }
+    .anchor{
+        color: blue;
+        cursor: pointer;
+    }
+    .anchor:hover{
+        text-decoration: underline;
+    }
+    .googpad{
+        position: relative;
+        height: 40%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 0.3fr 0.3fr;
+        gap: 8px;
+    }
+    .google{
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: rgb(240, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        color: rgb(49, 49, 255);
+        font-size: 12px;
+        
+    }
+    .face{
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .app{
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .googico{
+        height: 20px;
+        width: 20px;
+    }
+    .userin{
+        height: 50px;
+        width: 100%;
+        padding: 10px 0 10px 20px;
+        border-radius: 5px;
+        border: 1px white solid;
+        outline: none;
+    }
+}

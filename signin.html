@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlimPolo</title>
+    <link rel="stylesheet" href="signin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <div class="logo"><img src="./assets/logo.png"/></div>
+        </div>
+        <div class="body">
+            <div class="empty"></div>
+            <div class="form">
+                <form onsubmit="" class="signin">
+                    <div class="signpad">
+                        <div class="head">
+                            <div class="headpad">
+                                <p class="headpa">Welcome to <span style="font-size: 12px; color: #88a765; font-weight: 800; letter-spacing: 1px;">SLIMPOLO</span></p>
+                                <h1>Sign in</h1>
+                            </div>
+                        </div>
+                        <div class="link">
+                            <div class="linkpad">
+                                <p class="headpa" style="color: rgb(167, 156, 156);">no account ?</p>
+                                <a href="signup.html">sign up</a>
+                            </div>
+                        </div>
+                        <div class="inputfields">
+                            <div class="goog">
+                                <div class="googpad">
+                                    <button class="google"><img class="googico" src="./assets/google.png"/>sign in with google</button>
+                                    <button class="face"><img class="googico" src="./assets/facebook.png"/></button>
+                                    <button class="app"><img class="googico" src="./assets/apple.png"/></button>
+                                </div>
+                            </div>
+                            <div class="user">
+                                <label>Enter your username or email address</label>
+                                <input 
+                                    class="userin"
+                                    type="text"
+                                    value=""
+                                    placeholder="Username or Email address"
+                                />
+                            </div>
+                            <div class="pass">
+                                <label>Enter Your Password</label>
+                                <input 
+                                    class="userin"
+                                    type="password"
+                                    value=""
+                                    placeholder="Password"
+                                    onclick="handleClick"
+                                />
+                                <div class="forgot"><a class="anchor">forgot password</a></div>
+                            </div>
+                            
+                            <div class="submit"><button value="submit" class="subbut">Sign in</button></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
